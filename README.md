@@ -13,7 +13,8 @@ If you want to use the LabVIEW front end, it will allow you to easily build a UI
 
 ## How to install on Linux
 1. Follow the NI instructions; it works pretty simply for 2025Q3: https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000000YGwsCAG&l=en-IL
-   ```
+
+```
    LabVIEW 2023Q1 and Later (Download feeds package)
 With the release of version 2023Q1, LabVIEW is installed using package feeds, which is the usual method of installing software on Linux distributions.
 
@@ -31,13 +32,18 @@ With the release of version 2023Q1, LabVIEW is installed using package feeds, wh
         You can use the search tools inthe  package manager to find the correct package (e.g., apt search labview-2024)
     Reboot the PC
     Note: The LabVIEW Run Time Engine (RTE) package name is labview-2023-rte.
-  ```
-2. Go to your terminal and type `which python`.  I use miniconda, so I got: `/home/user/miniforge3/bin/python`, but it's better to create a separate environment where you can install the newest `openpiv-python` and then
 ```
-conda create -n openpiv python=3.12
-conda activate openpiv 
-pip install openpiv
+
+2. Go to your terminal and type `which python`.
+
+
+I use miniconda, so I create a separate environment where you can install the newest openpiv and then:
 ```
+   conda create -n openpiv python=3.12
+   conda activate openpiv 
+   pip install openpiv
+```
+
 Then `which python` will give you `/home/user/miniforge3/envs/openpiv/bin/python` or similar for your username
 
 3. Run LabVIEW from the Start menu or from the terminal, or open the `LabVIEW_GUI.vi` from the File manager. Initially, I received a request to update Python. I typed 3.12 in the first text box and then Open -> copy/paste the location of Python 3.12 `/home/user/miniforge3/envs/openpiv/bin/python` and things just worked.
