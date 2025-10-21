@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #basePath = '/Users/crogers/GitHub/ME51-25/PIV/odd_flow'
-basePath = '/Users/crogers/GitHub/ME51-25/PIV/steady_flow'
+basePath = '/Users/crogers/GitHub/ME51-25/PIV/odd_flow'
 frame_a = tools.imread(basePath+'/frame_0_delay-0.14s.png')
 frame_b = tools.imread(basePath+'/frame_1_delay-0.14s.png')
 
